@@ -32,8 +32,6 @@ class Scene
     /** @var GraphObject $graphObject */
     foreach ($this->graphObjects as $graphObject) {
       $graphObject->draw();
-
-      echo PHP_EOL;
     }
 
     return $this;

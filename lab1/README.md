@@ -15,13 +15,16 @@ classDiagram
   class Point {
     - coordX: float
     - coordY: float
-    clone(): Point
+    + draw(): void
+    + clone(): Point
   }
 
   class Circle {
     - centerCoordX: float
     - centerCoordY: float
     - radius: float
+    + draw(): void
+    + clone(): Circle
   }
 
   class Line {
@@ -30,6 +33,8 @@ classDiagram
     - endCoordX: float
     - endCoordY: float
     - endPoint: Point
+    + draw(): void
+    + clone(): Line    
   }
 
   class ObjectsFactory {

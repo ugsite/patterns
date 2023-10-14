@@ -19,5 +19,5 @@ abstract class GraphObject
 
   abstract public function draw(): void;
 
-  abstract public function clone(): GraphObject;
+  abstract public function clone(): self;
 }

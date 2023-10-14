@@ -3,7 +3,7 @@
 /**
  * Line
  */
-class Line extends GraphObject
+class Line extends SimpleShape
 {
   private float $startCoordX;
   private float $startCoordY;
@@ -35,7 +35,7 @@ class Line extends GraphObject
   public function draw(): void
   {
     printf(
-      "%s line with coordinates: start point: x: %f, y: %f, end point: x: %f, y: %f",
+      "%s line with coordinates: start point: x: %f, y: %f, end point: x: %f, y: %f\n",
       $this->isColour ? 'Colour' : 'Not colour',
       $this->startCoordX,
       $this->startCoordY,

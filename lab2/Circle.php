@@ -3,7 +3,7 @@
 /**
  * Circle
  */
-class Circle extends GraphObject
+class Circle extends SimpleShape
 {
   private float $centerCoordX;
   private float $centerCoordY;
@@ -31,7 +31,7 @@ class Circle extends GraphObject
   public function draw(): void
   {
     printf(
-      "%s circle with center point coordinates: x: %f, y: %f and radius %f",
+      "%s circle with center point coordinates: x: %f, y: %f and radius %f\n",
       $this->isColour ? 'Colour' : 'Not colour',
       $this->centerCoordX,
       $this->centerCoordY,

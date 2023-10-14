@@ -3,7 +3,7 @@
 /**
  * Point
  */
-class Point extends GraphObject
+class Point extends SimpleShape
 {
   private float $coordX;
   private float $coordY;
@@ -24,7 +24,7 @@ class Point extends GraphObject
   public function draw(): void
   {
     printf(
-      "%s point with coordinates: x: %f, y: %f",
+      "%s point with coordinates: x: %f, y: %f\n",
       $this->isColour ? 'Colour' : 'Not colour',
       $this->coordX,
       $this->coordY,
