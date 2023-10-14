@@ -75,7 +75,7 @@ classDiagram
   SimpleShape <|-- Line: Inheritance
   SimpleShape <|-- Circle: Inheritance
   SimpleShape <|-- TriangleAdapter: Inheritance
-  SimpleShape <|-- Decorator: Inheritance
+  SimpleShape <|-- FillDecorator: Inheritance
   
   TriangleAdapter o--> Triangle: Aggregation  
 ```
